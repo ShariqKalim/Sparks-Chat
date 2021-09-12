@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wassup chat app</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <section class="chat__section">
+      <div class="brand" style="display: flex; justify-content: space-between">
+        <img height="40" src="/sparkschat.png" width="300" alt="" />
+        <form>
+          <script
+            src="https://checkout.razorpay.com/v1/payment-button.js"
+            data-payment_button_id="pl_Hwds0gTJ9KNZra"
+            async
+          ></script>
+        </form>
+      </div>
+      <div class="message__area"></div>
+      <div>
+        <textarea
+          id="textarea"
+          cols="30"
+          rows="1"
+          placeholder="Write a message..."
+        ></textarea>
+      </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
